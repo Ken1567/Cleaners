@@ -8,6 +8,10 @@ const Contact = () => {
         message: ""
     })
 
+    const onChange = e => {     
+        setInputs({ ...inputs, [e.target.name]: e.target.value })
+    }
+
     const { name, email, message } = inputs
 
     const onSubmitForm = async (e) => {
@@ -40,10 +44,33 @@ const Contact = () => {
             <h1 className="text-center fw-bolder">Contact Us</h1>
             <p className="text-center"><b>Email: cleaners@gmail.com</b> <br /> <b>Phone:</b> 0912-345-6789</p>
             <form onSubmit={onSubmitForm} className="form">
-				<input type="text" name="name" className="input" placeholder="Enter Your Name"></input>
-				<input type="text" name="email" className="input" placeholder="Enter Your Email"></input>
-				<textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
-				<input type="submit" value="SEND" id="send"></input>
+				    <input type="text"
+                    className="input"
+                    placeholder="Enter Your Name"
+                    name="name" required
+                    value={name} 
+                    onChange={e => onChange(e)}/>
+
+				    <input type="text" 
+                    className="input" 
+                    placeholder="Enter Your Email" 
+                    name="email" required
+                    value={email} 
+                    onChange={e => onChange(e)}/>
+
+				    <textarea
+                    id="message" required 
+                    cols="30" rows="10" 
+                    placeholder="Enter Your Message"
+                    name="message"
+                    value={message} 
+                    onChange={e => onChange(e)}/>
+
+				    <input 
+                        type="submit" 
+                        value="SEND" 
+                        id="send">
+                    </input>
 			</form>
 	</section>
   )
