@@ -73,24 +73,6 @@
   top: 2rem;
 }
 
-.slider-btn{
-  margin-top: 30px;
-}
-
-.slider-btn .btn{
-  background-color: #e74c3c;
-  color: white;
-  border-radius: 5;
-  padding: 1.5rem 2rem;
-  font-size: 1rem;
-  margin-right: 15px;
-}
-
-.slider-btn .btn:hover{
-  border-color: white;
-  background-color: #e74c3c;
-}
-
 #contact{
 	display: flex;
 	flex-direction: column;
@@ -136,4 +118,20 @@
 	cursor: pointer;
 	box-shadow: 0 0 10px rgb(212, 114, 114);
   background-color: #e74c3c;
+}
+
+.container{
+  margin-left: 0;
+}
+
+.navbar{
+  position: relative;
+}
+
+.nav-link{
+  color: white;
+}
+
+.nav-link:hover{
+  color: #61dafb;
 }

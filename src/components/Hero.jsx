@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from './Modal';
+import ModalButton from './ModalButton';
 
 const Hero = () => {
   return (
@@ -15,12 +15,8 @@ const Hero = () => {
                 <div className="carousel-caption d-none d-md-block">
                     <h5>Cleaner than clean!</h5>
                     <p>live now, clean less</p>
-
-                    <div className="slider-btn">
-                        <button className="btn btn-1">
-                            Find Your Local Cleaners
-                        </button>
-                    </div>
+                    
+                    <ModalButton />
                 </div>
             </div>
             <div className="carousel-item">
@@ -29,9 +25,7 @@ const Hero = () => {
                     <h5>Cleaner than clean!</h5>
                     <p>live now, clean less</p>
 
-                    <div className="slider-btn">
-                        <button className="btn btn-1">Find Your Local Cleaners</button>
-                    </div>
+                    <ModalButton />
                 </div>
             </div>
             <div className="carousel-item">
@@ -40,9 +34,7 @@ const Hero = () => {
                     <h5>Cleaner than clean!</h5>
                     <p>live now, clean less</p>
 
-                    <div className="slider-btn">
-                        <button className="btn btn-1">Find Your Local Cleaners</button>
-                    </div>
+                    <ModalButton />
                 </div>
             </div>
         </div>
@@ -58,4 +50,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
