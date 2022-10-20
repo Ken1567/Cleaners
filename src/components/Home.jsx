@@ -12,7 +12,7 @@ const Home = () => {
         In addition to our exceptional routine cleaning, enhanced disinfection services are available for 
         your home to help ensure the wellness of your family.
         </p>
-        <p>
+        <p className="m-2">
         Studies have shown that disinfecting high-touch hard surfaces can prevent infections. 
         That is why at Cleaners, we want to give you the option to have our expert cleaners come in to 
         thoroughly clean your home and disinfect the high-touch surfaces for you. Through our existing 
