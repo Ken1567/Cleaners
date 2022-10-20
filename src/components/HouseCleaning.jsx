@@ -40,7 +40,7 @@ const HouseCleaning = () => {
                 Window Cleanings
             </li>
             <li>
-                Detailed CLeanings
+                Detailed Cleanings
             </li>
         </ul>
         <p className="m-2">
