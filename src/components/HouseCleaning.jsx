@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Cleaning = () => {
+const HouseCleaning = () => {
   return (
     <div>
         <h2 className="text-center fw-bolder">House Cleaning Services</h2>
@@ -52,4 +52,4 @@ const Cleaning = () => {
   )
 }
 
-export default Cleaning;
+export default HouseCleaning;

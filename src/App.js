@@ -9,8 +9,9 @@ import About from './components/About';
 import ModalButton from './components/ModalButton';
 import Contact from './components/Contact';
 import NavBar from './components/NavBar';
-import Cleaning from './components/Cleaning';
-import Keeping from './components/Keeping';
+import HouseCleaning from './components/HouseCleaning';
+import HouseKeeping from './components/HouseKeeping';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -22,9 +23,10 @@ function App() {
         <Route exact path='/about' element={(<About />)}></Route>
         <Route exact path='/modal' element={(<ModalButton />)}></Route>
         <Route exact path='/contact' element={(<Contact />)}></Route>
-        <Route exact path='/housecleaning' element={(<Cleaning />)}></Route>
-        <Route exact path='/housekeeping' element={(<Keeping />)}></Route>
+        <Route exact path='/housecleaning' element={(<HouseCleaning />)}></Route>
+        <Route exact path='/housekeeping' element={(<HouseKeeping />)}></Route>
       </Routes>
+      <Footer />
     </Router>
     
   );
