@@ -66,11 +66,9 @@ const Contact = () => {
                     value={message} 
                     onChange={e => onChange(e)}/>
 
-				    <input 
-                        type="submit" 
-                        value="SEND" 
-                        id="send">
-                    </input>
+                    <button id="send">
+                        Submit
+                    </button>
 			</form>
 	</section>
   )
